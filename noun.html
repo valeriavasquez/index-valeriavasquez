@@ -1,60 +1,183 @@
 <html>
 
-<head>
-<title> Noun Tab </title> 
+  <div class="container">
+    <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+      <div>
+        <h1 <span>Matcha:</span> 
+          <span>Noun</span> <span>Project</span></h1>
+        
+      </div>
+
+    </section>
+
+<style>
+
+:root {
+  --text-color: #a3b18a;
+  --bg-color: #fefae0;
+}
+
+body {
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  max-width: 100%;
+  width: 100%;
+}
+
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+img {
+  height: 110vh;
+  width: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  hyphens: auto;
+  font-family: "Times New Roman"}
+
+  
+  span {
+    display: block;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+  a {
+    color: var(--text-color);
+  }
+}
 
 
-<body>
-<h1> This is where my title is </h1>
+#sectionPin {
+  height: 100vh;
+ overflow: hidden;
+  display: flex;
+  left: 0;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
 
- <h2> By Valeria Vasquez </h2>
-    
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+
+ 
+p {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+}
+
+  
+  ul {
+     left-margin: auto;
+        right-margin: auto;
+        border-collapse: collapse;
+        width: 50%;
+  }
+
+
+</style>
+
+    <section id="sectionPin">
+      <div class="pin-wrap">
+        <pre>
+not many people favor
+the flavor
+of the green tea latte
+sweet from the start
+with a slight bitter aftertaste
+as the matcha on your tongue fades
+
+i remember the time
+we went to your favorite cafe
+and you commented on how your
+green tea latte
+was a little sweeter than the usual
+and now i comment how
+it is a little more bitter
+compared to when i had it with you
+
+the green tea latte
+is my memory of you
+sweet—for every time
+we sat in that same spot
+sipping the warm green drink
+and bitter— for the moment
+i drank my
+green tea latte
+alone
+        
+</pre>
+     <style>
+        pre {
+        font-family: "Times New Roman"
+ }
+        </style>
+       
+        <img src="https://i.pinimg.com/originals/3d/3c/91/3d3c91ec12f4f8f0abd4c38b10b7208e.jpg">
+        <img src="https://data.whicdn.com/images/342950897/original.jpg">
+        <img src="https://images.squarespace-cdn.com/content/v1/5e75a1783574617398afca6d/1604250463376-OIQU5OZNYRKM8JLJ6N6Y/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mh5VMMOxnTbph8FXiclivDQnof69TlCeE0rAhj6HUpXkw/FKZO2707.jpeg">
+
+      </div>
+    </section>
+   <section data-bgcolor="#e3857a" data-textcolor="#f1dba7"> <img src="https://data.whicdn.com/images/321036489/original.jpg" >
+       <h2 data-scroll data-scroll-speed="1" class="credit">  
     <ul>
-      <li> milk </li>
-      <li> coffee </li>
-    
-    
-    
-    <table>
+      <li> Author: Lunar </li>
+      <li> Date: October 2016 </li>
+      <li> Theme: Green Tea Latte </li>
+         </ul>
+  
+  
+         
+         </section>
+        
+     <section>
+     
+     <table>
       <tr> 
-        <th> Author </th>
-        <th> Year </th>
+        <th> Title </th>
+        <th> Source </th>
       </tr>
       <tr>
-        <td> Lindsay </td>
-        <td> 1986 </td>
-    
+        <td> green tea latte </td>
+        <td> Hello P'try </td>
+       </section>
+        
     </table>
-  
-  <style>
- 
- body{
-  background-color: #F5D6BA;
- }
- 
- 
- h1 {
-  text-align: center;
-}
-
-table, th, td {
-  border: 5px solid green;
-}
-table{
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border-collapse: collapse;
-}
-  
-  
-  </style>
-
-
-</body>
-
-
-
+     
+  </div>
 
 
 </html>
