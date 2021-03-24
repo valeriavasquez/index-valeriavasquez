@@ -1,94 +1,117 @@
 <html>
-  <body>
-  <ul> 
+
+  <div class="container">
+  <header>
+     <ul> 
     <li><b><a href="#home">Home</a></b></li>
-    <li><b><a href="#classes">Classes</a></b> </li>
-    <li><b><a href="#cupcakes">Cupcake Pics</a> </b> </li>
-       
-  </ul>
-  
-  <div class="front">
-  <img src="tibble tea.png">
-  </div>  
-    
-  <br>
-  <br>
-  <h1> Sample </h1> 
-  <table align="center" id="classes">
-    <tr>
-      <th> Item </th>
-      <th> Size </th>
-      <th> Price </th>
+    <li><b><a href="#classes">Boba</a></b> </li>
+    <li><b><a href="#cupcakes">Our Boba</a> </b> </li>
+        </ul>
+
+  </header>
+  <nav><b>Welcome to Tibble Tea! A store founded est 2011. We provide the freshest drinks, with the freshest ingredients. Build your own boba with our variety menu.</b><div> <img src="tibble tea.png"></div></nav>
+  <main><div class="one"><table class="table" align="center" id="classes">
+   <tr>
+      <th class="tabletitle"> Base</th>
+      <th class="tabletitle"> Boba </th>
+      <th class="tabletitle"> Topping </th>
     </tr>
     
    <tr> 
-     <td> sample </td>
-     <td> sample </td>
-     <td> sample </td>
+     <td> Milk Tea </td>
+     <td> Tapioca </td>
+     <td> Sweet Cream </td>
     </tr>
     
     <tr> 
-     <td> sample </td>
-     <td> sample </td>
-     <td> sample </td>
+     <td> Taro Tea </td>
+     <td> Strawberry </td>
+     <td> Coffee Cream </td>
     </tr>
     
     <tr> 
-     <td> sample </td>
-     <td> sample </td>
-     <td> sample </td>
+     <td> Thai Tea </td>
+     <td> Peach </td>
+     <td> Orea </td>
     </tr>
     
     
    <tr> 
-     <td> sample </td>
-     <td> sample </td>
-     <td> sample </td>
+     <td> Matcha Tea </td>
+     <td> Blue Rasberry </td>
+     <td> Mint </td>
     </tr>
+    
+     <tr> 
+     <td> Chai Tea </td>
+     <td> Yogurt </td>
+     <td> Cinnamon </td>
+    </tr>
+    
+     <tr> 
+     <td> Coconut Tea </td>
+     <td> Watermelon </td>
+     <td> Ice Cream </td>
+    </tr>
+    
     
   </table>  
-  <br> 
-<p style="text-align:center;">  <a href="https://www.powayusd.com/en-US/Schools/HS/WVHS/HOME">More Info About Westview</a>
-  <p>Do You Like Westview?</p>
-  </p>
-<form action="/action_page.php">
-  <input type="radio" name="school" value="yes" checked> yes<br>
-  <input type="radio" name="school" value="of course"> of course <br>
-  <input type="radio" name="school" value="other"> it's ok <br><br>
-  <input type="submit">
-</form> 
-  <p id="cupcakes">
-   <img src="https://3brothersbakery.com/wp-content/uploads/2018/09/CupcakeRegularWhite1.png">
-    <img src="https://www.sccpre.cat/mypng/full/300-3006479_3-cupcake.png" width=400px;> </p>
+Base: $2.50
+    <div> Boba: $1.00 </div>
+     <div> Topping: $0.50 </div>
+     <div> Extra Boba/Topping: $1.00 </div>
+
+  </main>
   
 
-    <style>
-      
-      body {
-  background-color: #f4dd97;
-  text-align: center;
+<aside>
+ 
+    
+   
+</aside>
+  <footer>FOOTER</footer>
+</div>
+  
+  <style>
+  body{
+  margin: 0; 
+    text-align: center;
+   color: black;
+  font-size: 110%;
+  text-decoration: none;
+    letter-spacing: 2px;
+    font-family: arial, sans-serif;
+  background-color: #ffe599;
 }
 
-h1 {
-  font-size: 200%;
-  color: black;
-  text-align: center;
-}
 
-table {
+ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 75%;
+  width: 100%;
+   height: 70%;
+  color: black;
+  border: 3px solid black;
+  float: left;
   }
 
 td, th {
-  border: 3px solid black;
   text-align: left;
   padding: 5px;
 }
 
 tr:nth-child(even) {
-  background-color: #f1c232;
+  background-color: #ffe599;
+}
+
+tr:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+.tabletitle {
+  color: #d9d2e9;
+  background-color: black;
 }
 
 a {
@@ -124,23 +147,72 @@ li a:hover {
   color: #f1c232;
   font-size: 113%;
   border-bottom: 3px solid #f1c232;
+  text-align: center;
+    padding: 14px 16px;
+  transition-duration: 0.4s;
+  
 }
 
-.front {
 
-}
-  </style>
-  
-  
-  
-</body>
+
+
+
+
+
+
+
+
+.container{
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+  grid-gap: .75em;        
+  height: 100vh;
+
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"    
+    "footer footer footer";    
+  }
+  @media(max-width: 480px){
+    display: block;
+  }
  
-  
-  
-  
-  
-  
-  
-  
+  nav{
+    grid-area: nav;
+    background-color: #f1c232;
+    text-align: center;
+   color: black;
+  font-size: 110%;
+  text-decoration: none;
+    letter-spacing: 1px;
+    font-family: arial, sans-serif;
+  }
+  main{
+    grid-area: main;
+    background-color: #f1c232;
+  }
+  aside{
+    grid-area: aside;
+    background-color: #f1c232;
+    background-size: cover;
+    background-image: url('https://i.pinimg.com/originals/fe/27/3b/fe273be51c34ee23e8c234910c8b5dd9.jpg');
+   
+  }
+  footer{
+    grid-area: footer;
+    background-color: #f1c232;
+  }
+}
+
+
+    </style>
   
 </html>
