@@ -1,6 +1,5 @@
  <html>
 
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,6 +9,9 @@
     <li><a href="art.html">Location</a> </li>
         </ul>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  
   </head>
 <body>
 
@@ -17,32 +19,40 @@
   <h1>New York Fashion Week</h1>
 </div>
 
-
-
-<div class="main">
-  <h1>NYFW</h1>
-  <p>New York Fashion Week is a prestigious annual fashion show held across New York city, with the most respected and reputable fashion designers in the world.</p>
-  <p> Sample sample sample</p>
+<img src="VVFile_000.jpeg">
+    
+    
+  <div class="grid-container">
+  <div class="item1"> <h1>NYFW</h1><p>New York Fashion Week is a prestigious annual fashion show held across New York city, with the most respected and reputable fashion designers in the world.</p>
+  <p> "Fashion Week is when the industry’s top designers present their upcoming collections in a series of runway shows and presentations"<i> (Teen Vogue)</i></p></div>
+    <div class="item2"><h1>IMG</h1> IMG is a global leader in sports, fashion, events and media. The company manages some of the world's greatest athletes and fashion icons; owns and operates hundreds of live events annually' and is a leading independent producer and distributor of sports and entertainment media. IMG also specializes in licensing, sports training, and league development. IMG is a subsidiary of Endeavor, a global entertainment, sports, and content company.</div>
+  
+    <div class="item3"><iframe width="560" height="315" src="https://www.youtube.com/embed/DwMnjf_uDb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/AZAd4rJXjo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>  
+ 
+    
+    <div class="item4"><img src="https://3.bp.blogspot.com/-ti-DTtNM-_8/WKdEa5iZ5XI/AAAAAAAARJU/zJkjhLYmJpoVYQcKVYX5q5goMiyhcBwJwCLcB/s1600/FW17_ToryBurch_25.jpg" width="213" height="319.5"> <img src="https://3.bp.blogspot.com/-rS9kaLanKG4/WKdERBOUoFI/AAAAAAAARJI/w6MgKYfDAwo3gOeoDim5qaVcyFASgz90wCLcB/s1600/FW17_ToryBurch_23.JPG" width="213" height="319.5> </div>
+ 
+   
+    <div class="item5">  </div>
 </div>
-
-  
-  
-  <div class="main">
-  <h1>extra</h1>
-  <p>extra bksjdbkjyfglkjhabflyegf,jah</p>
-    <p>sample sampeln,hjfbkhjfbvjhvjhevbfgvkghhgvghvtfkytdkrytdjgfcxgdgjtrfgdcjvfcjrtfcxdjrtdjyfg </p>
-  
-  
+    
+    
+    
 </body>
-
+     
+     
+     
 <style>
 * {
   box-sizing: border-box;
 }
 
+
 body {
-  color: white;
-  background-color: black;
+  color: #371d1b;
+  background-color: #371d1b;
+  text-align: center;
+ 
 }
 
 a {
@@ -58,13 +68,14 @@ ul {
   margin: 0;
   padding: 0;
   position: fixed;
-  background-color: white;
+  background-color: antiquewhite;
   width: 100%;
   top: 0;
   left: 0;
   font-family: arial, sans-serif;
     
 }
+
 
 li {
   display: inline;
@@ -88,27 +99,66 @@ li a:hover {
 
 
 .header {
-  border: 1px solid white;
+ font-family: 'Abril Fatface', cursive;
+  border: 3px solid antiquewhite;
   padding: 30px;
   text-align: center;
+  background-color: #785438;
+  color: antiquewhite;
+   background-size: cover;
+    background-image: url('https://i.pinimg.com/564x/b2/81/b7/b281b76a945139945e9a93c8e0a11322.jpg');
+  letter-spacing: 3px;
+  font-size: 22px;
 }
 
-.menu {
-  width: 25%;
-  float: left;
-  padding: 15px;
-  border: 1px solid white;
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #371d1b;
+  padding: 10px;
 }
 
-.main {
-  width: 50%;
-  float: left;
-  padding: 15px;
-  border: 1px solid white
-    ;
+.grid-container > div {
+  border: 4px solid antiquewhite;
+  background-color: tan;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
 }
 
+.item1 { 
+  grid-area: header; 
+width: 100%;
+}
+
+
+.item2 { 
+  grid-area: menu; 
+width: 100%;
+}
+
+.item3 {
+grid-area: main;
+  width: 100%;
  
-</style>
+}
 
+.item4 {
+grid-area: right;
+width: 100%
+
+}
+
+
+
+     </style>
 </html>
